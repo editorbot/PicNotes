@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:uni_pic_notes/screens/home_screen.dart';
+import 'package:uni_pic_notes/screens/splash_screen.dart';
+import 'package:uni_pic_notes/screens/view_screen.dart';
 
+late Size mq;
 void main() {
   runApp(const MyApp());
 }
@@ -31,7 +34,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home:  MyHomePage(title: 'Flutter Demo  Page'),
     );
   }
 }
@@ -86,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body:HomeScreen(),
+      body:ViewScreen(),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
