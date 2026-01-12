@@ -14,13 +14,28 @@ class HomeScreen extends StatelessWidget {
 
 
       body:Padding(
-        padding: const EdgeInsets.all(18.0),
-        child: Card(
+        padding: const EdgeInsets.only(left: 18.0,top: 18),
+        child: GridView.count(crossAxisCount: 2,
+          childAspectRatio: 0.90/1,
+          children:[ Card(
 
-        shadowColor: Colors.blueGrey,
-        elevation: 3,
-          child: Image.asset( "assets/Cloudia.jpg")
+          clipBehavior: Clip.antiAlias,
+          shadowColor: Colors.blueGrey,
+          elevation: 3,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(18.0),
+                  child: Image.asset( "assets/Cloudia.jpg",fit: BoxFit.cover,),
+                ),
 
+                Text("data")
+              ],
+            )
+
+          ),
+        ]
         ),
       ),
     );
