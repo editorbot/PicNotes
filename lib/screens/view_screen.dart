@@ -17,7 +17,7 @@ class _ViewScreenState extends State<ViewScreen> {
       body: Center(
 
         child: Container(
-          padding: EdgeInsets.all(2),
+          padding: EdgeInsets.all(3),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               gradient: SweepGradient(colors: const [
@@ -31,7 +31,7 @@ class _ViewScreenState extends State<ViewScreen> {
                 Colors.red, // closes the loop
               ],
                 // transform: GradientRotation(animation.value * 2 * math.pi),
-              ).withOpacity(0.3),),
+              ).withOpacity(0.4),),
           child: Container(
           width: mq.width*.2,
             height: mq.height*.2,

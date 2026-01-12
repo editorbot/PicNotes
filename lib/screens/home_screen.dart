@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uni_pic_notes/main.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,12 +11,17 @@ class HomeScreen extends StatelessWidget {
         title: Text("Notes"),
         backgroundColor: Colors.blueGrey,
       ) ,
-      extendBodyBehindAppBar: true,
 
-      body:ListView(
-        children: [
-          Card(),
-        ],
+
+      body:Padding(
+        padding: const EdgeInsets.all(18.0),
+        child: Card(
+
+        shadowColor: Colors.blueGrey,
+        elevation: 3,
+          child: Image.asset( "assets/Cloudia.jpg")
+
+        ),
       ),
     );
 
